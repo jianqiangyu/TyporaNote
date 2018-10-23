@@ -58,7 +58,7 @@ pod install
 >
 > `--repo-update`  ：  在`install`前强制执行`pod repo update` 
 >
-> `--deployment`  
+> `--deployment`  : 在安装期间禁止对Podfile或Podfile.lock进行任何更改。
 >
 > `--project-directory=/project/dir/` ： 项目根目录的路径。
 
