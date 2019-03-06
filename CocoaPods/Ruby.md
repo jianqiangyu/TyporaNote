@@ -1,0 +1,7 @@
+Ruby
+
+Rvm 
+
+rubygems
+
+bundle

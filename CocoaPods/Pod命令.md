@@ -47,12 +47,12 @@ pod init XCODEPROJ // XCODEPROJ 可选
 pod install 
 ```
 
-下载`podfile`中定义的依赖，并且在./Pods中创建一个pods库项目。
+下载`podfile`中定义的依赖，并且在`./Pods`中创建一个`pods`库项目。
 
 1. 每次运行`pod install`命令,并下载并安装新`pod`时,它会在`Podfile.lock`文件中为每个pod写入已安装的版本。`Podfile.lock`跟踪每个`pod`的已安装版本并锁定这些版本。
 2. 运行`pod`安装时，它仅解析`Podfile.lock`中尚未列出的`pod`的依赖项。
-       1. 对于`Podfile.lock`中列出的`pod`，它会下载`Podfile.lock`中列出的显式版本，而不尝试检查是否有更新的版本
-       2. 对于尚未在`Podfile.lock`中列出的`pod`，它会搜索与`Podfile`中描述的版本匹配的版本（例如`pod'MyPod'，'〜> 1.2'`）
+  ​     1. 对于`Podfile.lock`中列出的`pod`，它会下载`Podfile.lock`中列出的显式版本，而不尝试检查是否有更新的版本
+  ​     2. 对于尚未在`Podfile.lock`中列出的`pod`，它会搜索与`Podfile`中描述的版本匹配的版本（例如`pod'MyPod'，'〜> 1.2'`）
 
 > 选项：
 >
